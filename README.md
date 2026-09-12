@@ -77,7 +77,6 @@ The workflow includes rules for read preprocessing, genome assembly, assembly as
 
 ## Repository Structure
 
-```text
 laccase_project/
 ├── Snakefile
 ├── config.yaml
@@ -89,7 +88,7 @@ laccase_project/
 ├── quast_output/
 └── results/
     └── pipeline_summary.txt
-### 2. Prepare the input data
+## Prepare the Input Data
 
 Place the paired-end FASTQ files inside the `raw_reads/` directory.
 
@@ -101,3 +100,12 @@ sample: "SRR39923808"
 raw_reads:
   r1: "raw_reads/SRR39923808_1.fastq"
   r2: "raw_reads/SRR39923808_2.fastq"
+```
+
+The `config.yaml` file also defines output directories, computational resources, and BLAST parameters used by the workflow.
+
+## Learning Outcome
+
+This project helped me understand a complete bacterial WGS analysis workflow, from sequencing reads and genome assembly to annotation and protein-level candidate confirmation.
+
+Converting the workflow into Snakemake provided hands-on experience with workflow automation and reproducible bioinformatics analysis.
