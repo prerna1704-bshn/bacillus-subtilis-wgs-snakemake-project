@@ -1,0 +1,26 @@
+# Configuration for the laccase WGS pipeline
+# Change values here instead of editing the Snakefile directly
+
+sample: "SRR39923808"
+
+raw_reads:
+  r1: "raw_reads/SRR39923808_1.fastq"
+  r2: "raw_reads/SRR39923808_2.fastq"
+
+trimmed_reads_dir: "trimmed_reads"
+spades_output_dir: "spades_output"
+quast_output_dir: "quast_output"
+prokka_output_dir: "prokka_output"
+gene_confirmation_dir: "gene_confirmation"
+
+prokka:
+  prefix: "PROKKA_08192026"
+
+laccase_reference: "gene_confirmation/uniprot_laccase.fasta"
+
+threads: 4
+
+blast:
+  evalue: 1e-5
+  max_target_seqs: 5
+

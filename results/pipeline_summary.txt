@@ -1,0 +1,40 @@
+Bacillus subtilis Laccase WGS Analysis
+======================================
+
+Sample:
+SRR39923808
+
+Workflow:
+Illumina paired-end reads
+        ↓
+fastp read trimming/QC
+        ↓
+SPAdes genome assembly
+        ↓
+QUAST assembly assessment
+        ↓
+Prokka genome annotation
+        ↓
+BLASTP laccase confirmation
+
+Assembly Results:
+-----------------
+Number of contigs: 43
+Total assembly length: 4,222,878 bp
+
+Annotation Results:
+-------------------
+CDS: 4328
+rRNA: 18
+tRNA: 84
+tmRNA: 1
+ncRNA: 0
+
+Laccase Confirmation:
+---------------------
+Best BLASTP candidate:
+DGGODKJG_04118	sp|P07788|COTA_BACSU	98.246	513	9	0	1	513	1	513	0.0	1052
+
+Conclusion:
+-----------
+BLASTP identified DGGODKJG_04118 as a strong CotA laccase candidate, with 98.246% sequence identity over 513 amino acids and an E-value of 0.0 against UniProt P07788.
