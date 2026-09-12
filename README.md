@@ -9,15 +9,15 @@ The workflow was first performed step-by-step to understand each analysis stage 
 ## Workflow
 
 Raw paired-end Illumina reads
-↓
+        ↓
 fastp — Read trimming and QC
-↓
+        ↓
 SPAdes — Genome assembly
-↓
+        ↓
 QUAST — Assembly quality assessment
-↓
+        ↓
 Prokka — Genome annotation
-↓
+        ↓
 BLASTP — Laccase candidate confirmation
 
 ## Tools Used
