@@ -89,3 +89,15 @@ laccase_project/
 ├── quast_output/
 └── results/
     └── pipeline_summary.txt
+### 2. Prepare the input data
+
+Place the paired-end FASTQ files inside the `raw_reads/` directory.
+
+Update the sample name and FASTQ file paths in `config.yaml`:
+
+```yaml
+sample: "SRR39923808"
+
+raw_reads:
+  r1: "raw_reads/SRR39923808_1.fastq"
+  r2: "raw_reads/SRR39923808_2.fastq"
