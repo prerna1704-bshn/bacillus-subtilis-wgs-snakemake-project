@@ -8,6 +8,7 @@ The workflow was first performed step-by-step to understand each analysis stage 
 
 ## Workflow
 
+```text
 Raw paired-end Illumina reads
         ↓
 fastp — Read trimming and QC
@@ -19,6 +20,7 @@ QUAST — Assembly quality assessment
 Prokka — Genome annotation
         ↓
 BLASTP — Laccase candidate confirmation
+```
 
 ## Tools Used
 
@@ -77,6 +79,7 @@ The workflow includes rules for read preprocessing, genome assembly, assembly as
 
 ## Repository Structure
 
+```text
 laccase_project/
 ├── Snakefile
 ├── config.yaml
@@ -88,6 +91,8 @@ laccase_project/
 ├── quast_output/
 └── results/
     └── pipeline_summary.txt
+```
+
 ## Prepare the Input Data
 
 Place the paired-end FASTQ files inside the `raw_reads/` directory.
